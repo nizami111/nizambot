@@ -61,7 +61,7 @@ def main():
     dp.add_handler(CommandHandler("help", help))
 
     # on noncommand i.e message - echo the message on Telegram
-    dp.add_handler(MessageHandler(Filters.text, farde))
+    dp.add_handler(MessageHandler(Filters.text, grade))
     
 
     # log all errors
