@@ -33,6 +33,18 @@ def echo(update, context):
 def error(update, context):
     """Log Errors caused by Updates."""
     logger.warning('Update "%s" caused error "%s"', update, context.error)
+    
+def grade(update,context):
+    """If person is known, send his grade
+    if update.message.text == 'Nizami Orudzhev':
+        update.message.reply_text('Manager')
+    
+    if update.message.text == 'Valeriy Aparin':
+        update.message.reply_text('E3')
+        
+    if update.message.text == 'Yaroslav Gafiatullin':
+        update.message.reply_text('A1')
+
 
 def main():
     """Start the bot."""
@@ -49,7 +61,7 @@ def main():
     dp.add_handler(CommandHandler("help", help))
 
     # on noncommand i.e message - echo the message on Telegram
-    dp.add_handler(MessageHandler(Filters.text, echo))
+    dp.add_handler(MessageHandler(Filters.text, farde))
     
 
     # log all errors
