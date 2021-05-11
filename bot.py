@@ -39,7 +39,7 @@ def grade(update,context):
     if update.message.text == 'Nizami Orudzhev':
         update.message.reply_text('Manager')
     
-    if update.message.text == 'Valeriy Aparin':
+    if update.message.text == 'Valery Aparin':
         update.message.reply_text('E3')
         
     if update.message.text == 'Yaroslav Gafiatullin':
