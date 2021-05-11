@@ -35,7 +35,7 @@ def error(update, context):
     logger.warning('Update "%s" caused error "%s"', update, context.error)
     
 def grade(update,context):
-    """If person is known, send his grade
+    """If person is known, send his grade"""
     if update.message.text == 'Nizami Orudzhev':
         update.message.reply_text('Manager')
     
